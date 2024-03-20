@@ -63,7 +63,9 @@ const SingleProduct = () => {
             </div>
             <p className="text-gray-600 mb-4">{singledata.description}</p>
             <div className="flex items-center mb-5">
-              <p className="text-gray-700 font-bold mr-2">{singledata.price}</p>
+              <p className="text-gray-700 font-bold mr-2">
+                ${singledata.price}
+              </p>
             </div>
             <button
               onClick={() => handleAddToCart({ id, img, price, title })}

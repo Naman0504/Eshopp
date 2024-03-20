@@ -42,7 +42,7 @@ export const cartSlice = createSlice({
       state.items.forEach((i) => (sum += i.price * i.quantity));
       state.subTotal = sum;
       state.tax = +(state.subTotal * 0.18).toFixed();
-      state.total = state.subTotal + state.tax;
+      state.total = (state.subTotal + state.tax).toFixed();
     },
   },
 });
