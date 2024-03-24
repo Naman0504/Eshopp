@@ -37,7 +37,7 @@ const SingleProduct = () => {
   const handleAddToCart = (id) => {
     // console.log(id);
     dispatch(addToCart(id));
-    toast.success("added to cart", { duration: 1000, position: "top-right" });
+    toast.success("added to cart");
   };
 
   return (
